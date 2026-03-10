@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTasks } from "../api/taskApi";
+import { getTasks, getTasksByPriority, getTasksByStatus } from "../api/taskApi";
 import type { Task } from "../types/task";
 import TaskForm from "../components/TaskForm";
 import TaskList from "../components/TaskList";
@@ -12,6 +12,18 @@ function Home() {
     const res = await getTasks();
     setTasks(res.data);
   };
+
+  const filterTasks = async (status: string, priority: string) => {
+    if(status){
+        const res = await getTasksByStatus(status);
+        setTasks(res.data);
+    }else if(priority){
+        const res = await getTasksByPriority(priority);
+        setTasks(res.data);
+    }else{
+        fetchTasks();
+    }
+}
 
   useEffect(() => {
     fetchTasks();
@@ -71,6 +83,7 @@ function Home() {
             tasks={tasks}
             refreshTasks={fetchTasks}
             setEditingTask={setEditingTask}
+            filterTasks={filterTasks}
           />
         </section>
       </main>
