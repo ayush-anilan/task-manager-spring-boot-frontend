@@ -2,6 +2,22 @@
 
 A modern frontend application for managing tasks, built with React, TypeScript, and Vite. This application consumes a Spring Boot backend API to provide a seamless task management experience.
 
+## Live Demo
+
+- **Frontend URL**: [https://task-manager-spring-boot-frontend.vercel.app/](https://task-manager-spring-boot-frontend.vercel.app/)
+- **Backend URL**: [https://task-manager-spring-boot-us79.onrender.com](https://task-manager-spring-boot-us79.onrender.com)
+
+## Screenshots
+
+### Dashboard
+![Dashboard Screenshot](Home.png)
+
+### Add task
+![Add Task Screenshot](AddTask.png)
+
+### Edit task
+![Edit Task Screenshot](EditTask.png)
+
 ## Features
 
 - View all tasks with filtering by status and priority
