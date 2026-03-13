@@ -10,13 +10,13 @@ A modern frontend application for managing tasks, built with React, TypeScript, 
 ## Screenshots
 
 ### Dashboard
-![Dashboard Screenshot](Home.png)
+![Dashboard Screenshot](screenshots/Home.png)
 
 ### Add task
-![Add Task Screenshot](AddTask.png)
+![Add Task Screenshot](screenshots/AddTask.png)
 
 ### Edit task
-![Edit Task Screenshot](EditTask.png)
+![Edit Task Screenshot](screenshots/EditTask.png)
 
 ## Features
 
