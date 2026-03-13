@@ -4,4 +4,6 @@ export interface Task {
   description: string;
   priority: "LOW" | "MEDIUM" | "HIGH";
   status: "TODO" | "IN_PROGRESS" | "DONE";
+  createdAt?: string;
+  updatedAt?: string;
 }

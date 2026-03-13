@@ -64,6 +64,14 @@ function TaskItem({ task, refreshTasks, setEditingTask }: TaskItemProps) {
             {priority.label}
           </span>
         </div>
+        <div className="mt-2 flex flex-col gap-1 text-stone-500">
+            <span className="text-sm">
+            Created At: {task.createdAt ? new Date(task.createdAt).toLocaleString() : "N/A"}
+            </span>
+            <span className="text-sm">
+                Updated At: {task.updatedAt ? new Date(task.updatedAt).toLocaleString() : "N/A"}
+            </span>
+        </div>
       </div>
 
       {/* Right: actions */}
